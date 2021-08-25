@@ -3,7 +3,7 @@
 2. Use Django to show the players data that I collected and distinguished by their teams on web. 
 3. Explore this web with Docker. 
 
-## Some Images
+## Display
 ### Home Page
 * Go to Teams Data Page by clicking the Get started button!
 
