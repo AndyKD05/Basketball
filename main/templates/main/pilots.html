@@ -1,0 +1,89 @@
+{% extends 'main/base.html'%}
+{% block title %}
+  PilotsPage
+{% endblock %}
+{% block content %}
+<div class="container-fuild">
+    <div class="row" style="margin-top:20px; margin-left:20px">
+        <div class="col-1">
+            <img alt="image" style="width:150px" src="https://pleagueofficial.com/upload/p_team/logo_2_1606284958.png">
+        </div>
+        <div class="col-3">
+            <hr style="height:46pt; visibility:hidden;" />
+            <h2>桃園領航猿</h2>
+        </div>
+    </div>
+    <div id="lock-table-scroll" class="lock-table-scroll">
+        <div id="main-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="main-table" class="table table-hover table-striped dataTable no-footer" role="grid">
+                        <thead class="bg-deepgray">
+                                <tr role="row">
+                                    <th class="fixed-side" title="playername" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="球員: activate to sort column ascending" style="width: 70px;">球員</th>
+                                    <th class="fixed-side" style="word-break: keep-all; width: 25.95px;" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="背號: activate to sort column ascending">背號</th>
+                                    <th class="fixed-side" style="word-break: keep-all; width: 25.95px;" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="位置: activate to sort column ascending">位置</th>
+                                    <th class="fixed-side" style="word-break: keep-all; width: 25.95px;" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="身高: activate to sort column ascending">身高</th>
+                                    <th class="fixed-side" style="word-break: keep-all; width: 25.95px;" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="體重: activate to sort column ascending">體重</th>
+                                    <th class="fixed-side" style="word-break: keep-all; width: 25.95px;" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="年齡: activate to sort column ascending">年齡</th>
+                                    <th class="fixed-side" title="" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="出賽次數: activate to sort column ascending" style="width: 51.2px;">出賽次數</th>
+                                    <th class="fixed-side" title="min" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-sort="descending" aria-label="時間 (分): activate to sort column ascending" style="width: 48.0375px;">時間 (分)</th>
+                                    <th class="fixed-side" title="twopts" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="兩分命中: activate to sort column ascending" style="width: 51.2px;">兩分命中</th>
+                                    <th class="fixed-side" title="" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="兩分出手: activate to sort column ascending" style="width: 51.2px;">兩分出手</th>
+                                    <th class="fixed-side" title="twoptspercentage" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="兩分%: activate to sort column ascending" style="width: 42.9875px;">兩分%</th>
+                                    <th class="fixed-side" title="threepts" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="三分命中: activate to sort column ascending" style="width: 51.2px;">三分命中</th>
+                                    <th class="fixed-side" title="" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="三分出手: activate to sort column ascending" style="width: 51.2px;">三分出手</th>
+                                    <th class="fixed-side" title="threeptspercentage" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="三分%: activate to sort column ascending" style="width: 41.8px;">三分%</th>
+                                    <th class="fixed-side" title="freethrow" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="罰球命中: activate to sort column ascending" style="width: 51.2px;">罰球命中</th>
+                                    <th class="fixed-side" title="" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="罰球出手: activate to sort column ascending" style="width: 51.2px;">罰球出手</th>
+                                    <th class="fixed-side" title="freethrowpercentage" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="罰球%: activate to sort column ascending" style="width: 41.9px;">罰球%</th>
+                                    <th class="fixed-side" title="offenserebounds" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="攻板: activate to sort column ascending" style="width: 25.95px;">攻板</th>
+                                    <th class="fixed-side" title="defenserebounds" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="防板: activate to sort column ascending" style="width: 28.9375px;">防板</th>
+                                    <th class="fixed-side" title="rebounds"tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="籃板: activate to sort column ascending" style="width: 29.5px;">籃板</th>
+                                    <th class="fixed-side" title="steals" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="抄截: activate to sort column ascending" style="width: 25.95px;">抄截</th>
+                                    <th class="fixed-side" title="blocks" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="阻攻: activate to sort column ascending" style="width: 25.95px;">阻攻</th>
+                                    <th class="fixed-side" title="assists" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="助攻: activate to sort column ascending" style="width: 25.95px;">助攻</th>
+                                    <th class="fixed-side" title="turnovers" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="失誤: activate to sort column ascending" style="width: 25.95px;">失誤</th>
+                                    <th class="fixed-side" title="fouls" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="犯規: activate to sort column ascending" style="width: 26.0875px;">犯規</th>
+                                    <th class="fixed-side" title="pts"  tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="得分: activate to sort column ascending" style="width: 30.65px;">得分</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                        {% for data in alldata %}
+                        <tr>
+                        <td>{{ data.姓名 }}</td>
+                        <td>{{ data.背號 }}</td>
+                        <td>{{ data.位置 }}</td>
+                        <td>{{ data.登錄身高 }}</td>
+                        <td>{{ data.登錄體重 }}</td>
+                        <td>{{ data.年齡 }}</td>
+                        <td>{{ data.出賽次數 }}</td>
+                        <td>{{ data.時間 }}</td>
+                        <td>{{ data.兩分命中 }}</td>
+                        <td>{{ data.兩分出手 }}</td>
+                        <td>{{ data.兩分命中率 }}</td>
+                        <td>{{ data.三分命中 }}</td>
+                        <td>{{ data.三分出手 }}</td>
+                        <td>{{ data.三分命中率 }}</td>
+                        <td>{{ data.罰球命中 }}</td>
+                        <td>{{ data.罰球出手 }}</td>
+                        <td>{{ data.罰球命中率 }}</td>
+                        <td>{{ data.攻板 }}</td>
+                        <td>{{ data.防板 }}</td>
+                        <td>{{ data.籃板 }}</td>
+                        <td>{{ data.抄截 }}</td>
+                        <td>{{ data.阻攻 }}</td>
+                        <td>{{ data.助攻 }}</td>
+                        <td>{{ data.失誤 }}</td>
+                        <td>{{ data.犯規 }}</td>
+                        <td>{{ data.得分 }}</td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,121 @@
+{% extends 'main/base.html'%}
+{% block title %}
+  LioneersPage
+{% endblock %}
+{% block content %}
+<div class="container-fuild">
+    <div id="lock-table-scroll" class="lock-table-scroll">
+        <div id="main-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="main-table" class="table table-hover table-striped dataTable no-footer" role="grid">
+                        <thead class="bg-deepgray">
+                                <tr role="row">
+                                    <th title="playername" class="w43 sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="球員: activate to sort column ascending" style="width: 46px;">球員</th><th style="word-break: keep-all; width: 25.95px;" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="背號: activate to sort column ascending">背號</th><th title="" class="w122 sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="球隊: activate to sort column ascending" style="width: 108px;">球隊</th><th title="" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="出賽次數: activate to sort column ascending" style="width: 51.2px;">出賽次數</th><th title="min" class="sorting_desc" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-sort="descending" aria-label="時間 (分): activate to sort column ascending" style="width: 48.0375px;">時間 (分)</th><th title="twopts" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="兩分命中: activate to sort column ascending" style="width: 51.2px;">兩分命中</th><th title="" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="兩分出手: activate to sort column ascending" style="width: 51.2px;">兩分出手</th><th title="twoptspercentage" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="兩分%: activate to sort column ascending" style="width: 42.9875px;">兩分%</th><th title="threepts" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="三分命中: activate to sort column ascending" style="width: 51.2px;">三分命中</th><th title="" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="三分出手: activate to sort column ascending" style="width: 51.2px;">三分出手</th><th title="threeptspercentage" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="三分%: activate to sort column ascending" style="width: 41.8px;">三分%</th><th title="freethrow" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="罰球命中: activate to sort column ascending" style="width: 51.2px;">罰球命中</th><th title="" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="罰球出手: activate to sort column ascending" style="width: 51.2px;">罰球出手</th><th title="freethrowpercentage" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="罰球%: activate to sort column ascending" style="width: 41.9px;">罰球%</th><th title="pts" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="得分: activate to sort column ascending" style="width: 30.65px;">得分</th><th title="offenserebounds" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="攻板: activate to sort column ascending" style="width: 25.95px;">攻板</th><th title="defenserebounds" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="防板: activate to sort column ascending" style="width: 28.9375px;">防板</th><th title="rebounds" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="籃板: activate to sort column ascending" style="width: 29.5px;">籃板</th><th title="assists" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="助攻: activate to sort column ascending" style="width: 25.95px;">助攻</th><th title="steals" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="抄截: activate to sort column ascending" style="width: 25.95px;">抄截</th><th title="blocks" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="阻攻: activate to sort column ascending" style="width: 25.95px;">阻攻</th><th title="turnovers" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="失誤: activate to sort column ascending" style="width: 25.95px;">失誤</th><th title="fouls" class="sorting" tabindex="0" aria-controls="main-table" rowspan="1" colspan="1" aria-label="犯規: activate to sort column ascending" style="width: 26.0875px;">犯規</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                        <tr role="row" class="odd">
+                        <th><a href="/player/43">塔克</a></th>
+                        <td data-avg="2" data-total="2">2</td>
+                        <td data-avg="福爾摩沙台新夢想家" data-total="福爾摩沙台新夢想家">福爾摩沙台新夢想家</td>
+                        <td data-avg="17" data-total="17">17</td>
+                        <td data-avg="42:11" data-total="717:18" class="sorting_1">42:11</td>
+                        <td data-avg="5.88" data-total="100">5.88</td>
+                        <td data-avg="11.24" data-total="191">11.24</td>
+                        <td data-avg="52.36" data-total="52.36">52.36%</td>
+                        <td data-avg="3.59" data-total="61">3.59</td>
+                        <td data-avg="12.06" data-total="205">12.06</td>
+                        <td data-avg="29.76" data-total="29.76">29.76%</td>
+                        <td data-avg="5.35" data-total="91">5.35</td>
+                        <td data-avg="7" data-total="119">7</td>
+                        <td data-avg="76.47" data-total="76.47">76.47%</td>
+                        <td data-avg="27.88" data-total="474">27.88</td>
+                        <td data-avg="1.65" data-total="28">1.65</td>
+                        <td data-avg="6.47" data-total="110">6.47</td>
+                        <td data-avg="8.12" data-total="138">8.12</td>
+                        <td data-avg="5.59" data-total="95">5.59</td>
+                        <td data-avg="2.06" data-total="35">2.06</td>
+                        <td data-avg="0.41" data-total="7">0.41</td>
+                        <td data-avg="2.53" data-total="43">2.53</td>
+                        <td data-avg="1.94" data-total="33">1.94</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<font size="3" face="Courier New" >
+<table class="table table-hover" width="100%">
+    <thead>
+        <tr>
+            <th scope="col">姓名</th>
+            <th scope="col">位置</th>
+            <th scope="col">背號</th>
+            <th scope="col">身高</th>
+            <th scope="col">體重</th>
+            <th scope="col">年齡</th>
+            <th scope="col">出賽次數</th>
+            <th scope="col">時間(分)</th>
+            <th scope="col">兩分命中</th>
+            <th scope="col">兩分出手</th>
+            <th scope="col">兩分命中率</th>
+            <th scope="col">三分命中</th>
+            <th scope="col">三分出手</th>
+            <th scope="col">三分命中率</th>
+            <th scope="col">罰球命中</th>
+            <th scope="col">罰球出手</th>
+            <th scope="col">罰球命中率</th>
+            <th scope="col">得分</th>
+            <th scope="col">進攻籃板</th>
+            <th scope="col">防守籃板</th>
+            <th scope="col">籃板</th>
+            <th scope="col">抄截</th>
+            <th scope="col">阻攻</th>
+            <th scope="col">助攻</th>
+            <th scope="col">失誤</th>
+            <th scope="col">犯規</th>
+            <th scope="col">得分</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in alldata %}
+        <tr>
+            <td>{{ data.姓名 }}</td>
+            <td>{{ data.位置 }}</td>
+            <td>{{ data.背號 }}</td>
+            <td>{{ data.登錄身高 }}</td>
+            <td>{{ data.登錄體重 }}</td>
+            <td>{{ data.年齡 }}</td>
+            <td>{{ data.出賽次數 }}</td>
+            <td>{{ data.時間 }}</td>
+            <td>{{ data.兩分命中 }}</td>
+            <td>{{ data.兩分出手 }}</td>
+            <td>{{ data.兩分命中率 }}</td>
+            <td>{{ data.三分命中 }}</td>
+            <td>{{ data.三分出手 }}</td>
+            <td>{{ data.三分命中率 }}</td>
+            <td>{{ data.罰球命中 }}</td>
+            <td>{{ data.罰球出手 }}</td>
+            <td>{{ data.罰球命中率 }}</td>
+            <td>{{ data.得分 }}</td>
+            <td>{{ data.攻板 }}</td>
+            <td>{{ data.防板 }}</td>
+            <td>{{ data.籃板 }}</td>
+            <td>{{ data.抄截 }}</td>
+            <td>{{ data.阻攻 }}</td>
+            <td>{{ data.助攻 }}</td>
+            <td>{{ data.失誤 }}</td>
+            <td>{{ data.犯規 }}</td>
+            <td>{{ data.得分 }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</font>
+
+{% endblock %}
+
+<a class="btn-scroll-top" data-scroll="" href="#top"><i class="btn-scroll-top-icon czi-arrow-up text-primary"></i></a>

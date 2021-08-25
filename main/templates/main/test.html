@@ -1,0 +1,74 @@
+{% extends 'main/base.html'%}
+{% block title %}
+  LioneersPage
+{% endblock %}
+{% block content %}
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">位置</th>
+            <th scope="col">背號</th>
+            <th scope="col">姓名</th>
+            <th scope="col">身高</th>
+            <th scope="col">體重</th>
+            <th scope="col">年齡</th>
+            <th scope="col">出賽次數</th>
+            <th scope="col">時間(分)</th>
+            <th scope="col">兩分命中</th>
+            <th scope="col">兩分出手</th>
+            <th scope="col">兩分%</th>
+            <th scope="col">三分命中</th>
+            <th scope="col">三分出手</th>
+            <th scope="col">三分%</th>
+            <th scope="col">罰球命中</th>
+            <th scope="col">罰球出手</th>
+            <th scope="col">罰球%</th>
+            <th scope="col">得分</th>
+            <th scope="col">進攻籃板</th>
+            <th scope="col">防守籃板</th>
+            <th scope="col">籃板</th>
+            <th scope="col">抄截</th>
+            <th scope="col">阻攻</th>
+            <th scope="col">助攻</th>
+            <th scope="col">失誤</th>
+            <th scope="col">犯規</th>
+            <th scope="col">得分</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in alldata %}
+        <tr>
+            <th scope="row">{{ data.pk }}</th>
+            <td>{{ data.位置 }}</td>
+            <td>{{ data.背號 }}</td>
+            <td>{{ data.姓名 }}</td>
+            <td>{{ data.身高 }}</td>
+            <td>{{ data.體重 }}</td>
+            <td>{{ data.年齡 }}</td>
+            <td>{{ data.出賽次數 }}</td>
+            <td>{{ data.時間(分) }}</td>
+            <td>{{ data.兩分命中 }}</td>
+            <td>{{ data.兩分出手 }}</td>
+            <td>{{ data.兩分% }}</td>
+            <td>{{ data.三分命中 }}</td>
+            <td>{{ data.三分出手 }}</td>
+            <td>{{ data.三分% }}</td>
+            <td>{{ data.罰球命中 }}</td>
+            <td>{{ data.罰球出手 }}</td>
+            <td>{{ data.罰球% }}</td>
+            <td>{{ data.得分 }}</td>
+            <td>{{ data.攻板 }}</td>
+            <td>{{ data.防板 }}</td>
+            <td>{{ data.籃板 }}</td>
+            <td>{{ data.抄截 }}</td>
+            <td>{{ data.阻攻 }}</td>
+            <td>{{ data.助攻 }}</td>
+            <td>{{ data.失誤 }}</td>
+            <td>{{ data.犯規 }}</td>
+            <td>{{ data.得分 }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

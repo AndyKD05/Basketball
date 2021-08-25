@@ -1,0 +1,44 @@
+{% extends 'main/base.html'%}
+{% block title %}
+  TeamsPage
+{% endblock %}
+{% block content %}
+<div class="container">
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col"></th>
+            <th scope="col">名稱</th>
+            <th scope="col">所在地</th>
+            <th scope="col">總經理</th>
+            <th scope="col">總教練</th>
+            <th scope="col">官方網站</th>
+            <th scope="col">現役球員數據</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for team in teams %}
+        <tr>
+            <th scope="row">{{ team.pk }}</th>
+            <td>
+              <img alt="image" style="width:64px" src="{{ team.logo_url}}">
+            </td>
+            <td>{{ team.name }}</td>
+            <td>{{ team.city }}</td>
+            <td>{{ team.gm }}</td>
+            <td>{{ team.coach }}</td>
+            <td>
+              <span class="url">
+                <a href="{{team.web_url}}" target="_blank" >{{team.name}}</a>
+              </span>
+            </td>
+            <td>
+              <a class="btn btn-outline-secondary" href="{% url team.name %}" >GO</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}
