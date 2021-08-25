@@ -11,7 +11,9 @@
 ![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/team_page.PNG?raw=true)
 
 ### Official Web
+#### Click the official web link!
 ![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/lion_official.PNG?raw=true)
 
 ### Lioneers Players Data Page
+#### Click the GO button!
 ![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/lion.PNG?raw=true)
