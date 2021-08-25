@@ -4,4 +4,4 @@
 3. Explore this web with Docker. 
 
 ## Some Images
-<a href="https://github.com/jamesdai0717/basketball/blob/main/images/home_page.PNG"><img alt="https://github.com/jamesdai0717/basketball/blob/main/images/home_page.PNG" data-canonical-src="https://github.com/jamesdai0717/basketball/blob/main/images/home_page.PNG" style="max-width:100%;"></a>
+![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/home_page.PNG?raw=true)
