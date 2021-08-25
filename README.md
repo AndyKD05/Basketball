@@ -4,4 +4,11 @@
 3. Explore this web with Docker. 
 
 ## Some Images
+### Home Page
 ![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/home_page.PNG?raw=true)
+
+### Teams Page
+![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/team_page.PNG?raw=true)
+
+### Lioneers Players Data Page
+![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/lion.PNG?raw=true)
