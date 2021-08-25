@@ -5,7 +5,7 @@
 
 ## Display
 ### Home Page
-* Go to Teams Data Page by clicking the Get started button!
+* Go to Teams Page by clicking the Get started button!
 
 ![alt text](https://github.com/jamesdai0717/basketball/blob/main/images/home_page.PNG?raw=true)
 ### Teams Page
